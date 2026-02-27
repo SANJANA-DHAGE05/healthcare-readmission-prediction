@@ -1,3 +1,8 @@
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+
 # 🏥 Healthcare Readmission Prediction for Diabetes Patients
 
 An end-to-end Healthcare Analytics & Machine Learning project focused on predicting **30-day hospital readmissions** for diabetes patients using real-world clinical data.
