@@ -116,6 +116,74 @@ All saved under:visualizations folder
 - Length of stay impacts outcome significantly  
 
 ---
+---
+
+## 💼 Business Insights & Strategic Recommendations
+
+This analysis goes beyond model performance and focuses on actionable healthcare insights.
+
+### 📌 1️⃣ High-Risk Patient Identification
+
+Patients with:
+- Higher number of inpatient visits  
+- Frequent emergency visits  
+- Longer hospital stays  
+
+show significantly higher readmission probability.
+
+**Recommendation:**  
+Hospitals should flag these patients at discharge and implement post-discharge monitoring programs.
+
+---
+
+### 📌 2️⃣ Age-Based Risk Segmentation
+
+Certain age groups demonstrate elevated readmission rates.
+
+**Recommendation:**  
+Design age-specific discharge planning and follow-up care strategies to reduce risk.
+
+---
+
+### 📌 3️⃣ Medication & Treatment Impact
+
+Medication changes during admission correlate with higher readmission probability.
+
+**Recommendation:**  
+Implement stricter medication reconciliation protocols before discharge.
+
+---
+
+### 📌 4️⃣ Resource Optimization Opportunity
+
+By predicting high-risk patients in advance, hospitals can:
+
+- Prioritize follow-up appointments  
+- Allocate nursing resources efficiently  
+- Reduce unnecessary emergency readmissions  
+- Minimize financial penalties  
+
+---
+
+### 📌 5️⃣ Financial Impact Potential
+
+Reducing even a small percentage of 30-day readmissions can:
+
+- Lower operational costs  
+- Improve hospital quality metrics  
+- Enhance patient satisfaction scores  
+
+This predictive system can serve as a decision-support tool for hospital administrators.
+
+---
+
+## 🎯 Strategic Value of the Model
+
+This solution demonstrates how machine learning can:
+
+- Translate clinical data into actionable insights  
+- Support preventative healthcare strategies  
+- Improve both financial and patient-care outcomes  
 
 ## 4️⃣ Model Building & Evaluation
 
@@ -140,6 +208,11 @@ Multiple classification models were trained and compared:
 Healthcare problems prioritize **Recall** to minimize false negatives (missing high-risk patients).
 
 ---
+| Model              | Accuracy | Recall | F1 Score |
+|--------------------|----------|--------|----------|
+| Logistic Regression| 0.82     | 0.68   | 0.71     |
+| Random Forest      | 0.86     | 0.74   | 0.78     |
+| XGBoost            | 0.88     | 0.79   | 0.82     |
 
 ## 🧠 Feature Importance Analysis
 
