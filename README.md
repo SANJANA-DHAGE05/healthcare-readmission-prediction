@@ -187,18 +187,19 @@ HEALTHCARE_PROJECT/
 ## 1️⃣ Clone Repository
 
 
-git clone https://github.com/YOUR_USERNAME/healthcare-readmission-prediction.git
-cd healthcare-readmission-prediction
-Install Dependencies
+  - git clone https://github.com/YOUR_USERNAME/healthcare-readmission-prediction.git
+  - cd healthcare-readmission-prediction
+    
+## 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
 ## 3️⃣ Run Notebook
 
 Open:
 
-Healthcare_analytics.ipynb
+  - Healthcare_analytics.ipynb
 
-Run all cells sequentially.
+   - Run all cells sequentially.
 
 ## 📊 Final Deliverables
 
@@ -232,6 +233,43 @@ Run all cells sequentially.
 - Build REST API for predictions  
 
 ---
+
+---
+
+## 📸 Project Visualizations
+
+### 1️⃣ Target Distribution
+![Target Distribution](visualizations/01_target_distribution.png)
+
+---
+
+### 2️⃣ Correlation Matrix
+![Correlation Matrix](visualizations/06_correlation_matrix.png)
+
+---
+
+### 3️⃣ Model Comparison
+![Model Comparison](visualizations/07_model_comparison.png)
+
+---
+
+### 4️⃣ Confusion Matrices
+![Confusion Matrices](visualizations/08_confusion_matrices.png)
+
+---
+
+### 5️⃣ Feature Importance
+![Feature Importance](visualizations/09_feature_importance.png)
+
+---
+
+### 6️⃣ Risk Stratification
+![Risk Stratification](visualizations/11_risk_stratification.png)
+
+---
+
+### 7️⃣ Final Dashboard
+![Final Dashboard](visualizations/12_FINAL_DASHBOARD.png)
 
 ## 👩‍💻 Author
 
