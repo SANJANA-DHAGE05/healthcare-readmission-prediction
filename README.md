@@ -1,204 +1,198 @@
-🏥 Healthcare Readmission Prediction for Diabetes Patients
+# 🏥 Healthcare Readmission Prediction for Diabetes Patients
 
-An end-to-end Healthcare Analytics & Machine Learning project focused on predicting 30-day hospital readmissions for diabetes patients using real-world clinical data.
+An end-to-end Healthcare Analytics & Machine Learning project focused on predicting **30-day hospital readmissions** for diabetes patients using real-world clinical data.
 
-📌 Project Overview
+---
+
+## 📌 Project Overview
 
 Hospital readmissions within 30 days are a major healthcare challenge. They increase operational costs and often indicate suboptimal patient management.
 
 This project builds a complete analytics pipeline — from raw healthcare data to predictive modeling and dashboard-ready insights — to identify high-risk patients and support proactive clinical decisions.
 
-🎯 Business Objective
+---
+
+## 🎯 Business Objective
 
 To predict whether a diabetes patient will be readmitted within 30 days of hospital discharge and identify key factors contributing to readmission risk.
 
-Impact:
+### 💡 Impact
 
-Reduce hospital penalties
+- Reduce hospital penalties  
+- Improve patient care quality  
+- Optimize resource allocation  
+- Enable data-driven healthcare strategy  
 
-Improve patient care quality
+---
 
-Optimize resource allocation
+## 📊 Dataset Information
 
-Enable data-driven healthcare strategy
+- **Dataset:** Diabetes 130-US Hospitals (1999–2008)  
+- **Source:** UCI Machine Learning Repository  
+- **Records:** 100,000+ patient encounters  
+- **Features:** 50+ clinical & administrative attributes  
 
-📊 Dataset Information
+---
 
-Dataset: Diabetes 130-US Hospitals (1999–2008)
-
-Source: UCI Machine Learning Repository
-
-Records: 100,000+ patient encounters
-
-Features: 50+ clinical & administrative attributes
-
-📥 Dataset Setup Instructions
+## 📥 Dataset Setup Instructions
 
 Due to size limitations, the dataset is not uploaded.
 
-Download diabetic_data.csv from the UCI ML Repository.
+1. Download `diabetic_data.csv` from the UCI ML Repository.  
+2. Place it inside:
 
-Place it inside:
 
-dataset_diabetes/
+3. Run the notebook or Python scripts.
 
-Run the notebook or Python scripts.
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Python
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- XGBoost (if used)  
 
-Pandas
+---
 
-NumPy
+# 🔄 Project Workflow
 
-Matplotlib
+---
 
-Seaborn
+## 1️⃣ Data Acquisition & Validation
 
-Scikit-learn
+- Loaded raw clinical dataset  
+- Assessed data structure & data types  
+- Identified missing values  
+- Validated target variable distribution  
 
-XGBoost (if used)
+---
 
-🔄 Project Workflow
-1️⃣ Data Acquisition & Validation
+## 2️⃣ Data Preprocessing & Cleaning
 
-Loaded raw clinical dataset
-
-Assessed data structure & data types
-
-Identified missing values
-
-Validated target variable distribution
-
-2️⃣ Data Preprocessing & Cleaning
-
-Removed invalid entries (e.g., '?')
-
-Treated missing values
-
-Feature engineering
-
-Encoded categorical variables
-
-Data normalization (if applicable)
+- Removed invalid entries (e.g., '?')  
+- Treated missing values  
+- Feature engineering  
+- Encoded categorical variables  
+- Data normalization (if applicable)  
 
 Created cleaned dataset:
 
-diabetic_data_cleaned.csv
-3️⃣ Exploratory Data Analysis (EDA)
+
+---
+
+## 3️⃣ Exploratory Data Analysis (EDA)
 
 Comprehensive statistical and visual exploration was performed.
 
-Key Visualizations Created:
+### 📊 Key Visualizations Created
 
-Target distribution
+- Target distribution  
+- Numeric feature distributions  
+- Categorical feature distributions  
+- Admission type vs readmission  
+- Correlation matrix  
+- Risk stratification analysis  
+- Probability distribution plots  
 
-Numeric feature distributions
+All saved under:visualizations folder
 
-Categorical feature distributions
 
-Admission type vs readmission
+---
 
-Correlation matrix
+## 📈 Major Insights
 
-Risk stratification analysis
+- Readmission distribution is imbalanced  
+- Inpatient & emergency visit count strongly influence readmission  
+- Age groups show varying risk levels  
+- Certain medications correlate with higher readmission probability  
+- Length of stay impacts outcome significantly  
 
-Probability distribution plots
+---
 
-All saved under:
-
-visualizations/
-📈 Major Insights
-
-Readmission distribution is imbalanced
-
-Inpatient & emergency visit count strongly influence readmission
-
-Age groups show varying risk levels
-
-Certain medications correlate with higher readmission probability
-
-Length of stay impacts outcome significantly
-
-4️⃣ Model Building & Evaluation
+## 4️⃣ Model Building & Evaluation
 
 Multiple classification models were trained and compared:
 
-Logistic Regression
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- XGBoost (if implemented)  
 
-Decision Tree
+---
 
-Random Forest
+## 📊 Evaluation Metrics Used
 
-XGBoost (if implemented)
+- Accuracy  
+- Precision  
+- Recall (Critical for healthcare)  
+- F1-Score  
+- ROC-AUC  
+- Confusion Matrix  
 
-📊 Evaluation Metrics Used
+Healthcare problems prioritize **Recall** to minimize false negatives (missing high-risk patients).
 
-Accuracy
+---
 
-Precision
+## 🧠 Feature Importance Analysis
 
-Recall (Critical for healthcare)
+### 🔍 Top Predictors Identified
 
-F1-Score
-
-ROC-AUC
-
-Confusion Matrix
-
-Healthcare problems prioritize Recall to minimize false negatives (missing high-risk patients).
-
-🧠 Feature Importance Analysis
-
-Top Predictors Identified:
-
-Number of inpatient visits
-
-Number of emergency visits
-
-Age group
-
-Medication changes
-
-Diagnosis category
+- Number of inpatient visits  
+- Number of emergency visits  
+- Age group  
+- Medication changes  
+- Diagnosis category  
 
 Feature importance visualization available in:
 
-09_feature_importance.png
-📁 Project Structure
+
+---
+
+# 📁 Project Structure
 HEALTHCARE_PROJECT/
 │
 ├── dataset_diabetes/
-│   ├── diabetic_data.csv
-│   └── IDs_mapping.csv
+│ ├── diabetic_data.csv
+│ └── IDs_mapping.csv
 │
 ├── visualizations/
-│   ├── 01_target_distribution.png
-│   ├── 02_numeric_distributions.png
-│   ├── 03_categorical_distributions.png
-│   ├── 04_numeric_vs_readmission.png
-│   ├── 05_categorical_vs_readmission.png
-│   ├── 06_correlation_matrix.png
-│   ├── 07_model_comparison.png
-│   ├── 08_confusion_matrices.png
-│   ├── 09_feature_importance.png
-│   ├── 10_probability_distribution.png
-│   ├── 11_risk_stratification.png
-│   └── 12_FINAL_DASHBOARD.png
+│ ├── 01_target_distribution.png
+│ ├── 02_numeric_distributions.png
+│ ├── 03_categorical_distributions.png
+│ ├── 04_numeric_vs_readmission.png
+│ ├── 05_categorical_vs_readmission.png
+│ ├── 06_correlation_matrix.png
+│ ├── 07_model_comparison.png
+│ ├── 08_confusion_matrices.png
+│ ├── 09_feature_importance.png
+│ ├── 10_probability_distribution.png
+│ ├── 11_risk_stratification.png
+│ └── 12_FINAL_DASHBOARD.png
 │
 ├── diabetic_data_cleaned.csv
 ├── Healthcare_analytics.ipynb
 ├── EXECUTIVE_SUMMARY.txt
 ├── requirements.txt
 └── README.md
-🚀 How to Run the Project
-1️⃣ Clone Repository
+
+
+---
+
+# 🚀 How to Run the Project
+
+## 1️⃣ Clone Repository
+
+
 git clone https://github.com/YOUR_USERNAME/healthcare-readmission-prediction.git
 cd healthcare-readmission-prediction
-2️⃣ Install Dependencies
+Install Dependencies
 pip install -r requirements.txt
-3️⃣ Run Notebook
+
+## 3️⃣ Run Notebook
 
 Open:
 
@@ -206,52 +200,44 @@ Healthcare_analytics.ipynb
 
 Run all cells sequentially.
 
-📊 Final Deliverables
+## 📊 Final Deliverables
 
-Cleaned dataset
+- Cleaned dataset  
+- Model comparison analysis  
+- Feature importance visualization  
+- Risk stratification analysis  
+- Executive summary  
+- Final dashboard-ready visuals  
 
-Model comparison analysis
+---
 
-Feature importance visualization
+## 📌 Key Skills Demonstrated
 
-Risk stratification analysis
+- Real-world healthcare data cleaning  
+- Imbalanced classification handling  
+- Feature engineering  
+- Model comparison & evaluation  
+- Statistical interpretation  
+- Business-driven analytics thinking  
+- Professional GitHub documentation  
 
-Executive summary
+---
 
-Final dashboard-ready visuals
+## 🔮 Future Enhancements
 
-📌 Key Skills Demonstrated
+- Implement SMOTE for class imbalance  
+- Hyperparameter tuning using GridSearchCV  
+- Deploy model using Streamlit  
+- Convert notebook into modular Python package  
+- Build REST API for predictions  
 
-Real-world healthcare data cleaning
+---
 
-Imbalanced classification handling
+## 👩‍💻 Author
 
-Feature engineering
+**Sanjana Dhage**  
+Aspiring Data Analyst | Healthcare Analytics Enthusiast  
 
-Model comparison & evaluation
+- LinkedIn: https://www.linkedin.com/in/sanjana-dhage-99b11925a/  
+- GitHub:   https://github.com/SANJANA-DHAGE05/
 
-Statistical interpretation
-
-Business-driven analytics thinking
-
-Professional GitHub documentation
-
-🔮 Future Enhancements
-
-Implement SMOTE for class imbalance
-
-Hyperparameter tuning (GridSearchCV)
-
-Deploy model using Streamlit
-
-Convert notebook into modular Python package
-
-Build REST API for predictions
-
-👩‍💻 Author
-
-Sanjana Dhage
-Aspiring Data Analyst | Healthcare Analytics Enthusiast
-
-LinkedIn: (Add your link)
-GitHub: (Add your link)
