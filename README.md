@@ -39,7 +39,7 @@ To predict whether a diabetes patient will be readmitted within 30 days of hospi
 Due to size limitations, the dataset is not uploaded.
 
 1. Download `diabetic_data.csv` from the UCI ML Repository.  
-2. Place it inside:
+2. Place it inside the project folder
 
 
 3. Run the notebook or Python scripts.
